@@ -1,3 +1,3 @@
-from mynlp.features.chinesedocument import ChineseDocument
+from mynlp.features.document import Document
 
-__all__= ['ChineseDocument']
+__all__= ['Document']

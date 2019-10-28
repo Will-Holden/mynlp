@@ -33,7 +33,9 @@ class ChineseSetence:
         return [word.strip() for word in words] + [' ', '\n', ',',]
 
     def _word_tokenize(self, text):
-        seg_list = jieba.cut(text, cut_all=False)
+        _sentences = self._sent_tokenize(text)
+        # seg_list = jieba.cut(text, cut_all=False)
+        seg_list = [word for sentence in _sentences for word in jieba.cut(sentence, cut_all=False)]
         return seg_list
 
     def _sent_tokenize(self, text):

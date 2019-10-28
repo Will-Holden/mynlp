@@ -12,8 +12,8 @@ class TestChineseSentence(unittest.TestCase):
         return super().setUp()
 
     def test_words(self):
-        print(self.chinese.words)
-        print(self.chinese.sentences)
+        self.chinese.words
+        self.chinese.sentences
 
     def tearDown(self):
         del self.chinese
@@ -29,9 +29,9 @@ class TestEnglishSentence(unittest.TestCase):
         return super().setUp()
 
     def test_words(self):
-        print(self.english.words)
-        print(self.english.stems)
-        print(self.english.sentences)
+        self.english.words
+        self.english.stems
+        self.english.sentences
 
     # def tearDown(self):
     #     del self.english
