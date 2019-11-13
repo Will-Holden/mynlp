@@ -1,4 +1,5 @@
-from .dedupe.csvmodel import CSVDedupe
+from .dedupe.csvmodel import CSVDistinct, CSVLinker
+from .dedupe.commonmodel import CommonDistinct, CommonLink
 
 
-__all__ = ['CSVDedupe']
+__all__ = ['CSVDistinct', 'CSVLinker', 'dedupe', 'CommonDistinct', 'CommonLink']

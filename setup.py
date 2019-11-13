@@ -10,12 +10,12 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='my-nlp',
-    version='0.12',
+    version='0.13',
     description='my nlp toolkit',
     author='Xiaolong Liang',
     author_email='rembern@126.com',
     url='https://github.com/unhappydog/mynlp.git',
-    packages=['mynlp', 'mynlp.preprocess', 'mynlp.features', 'mynlp.utils', 'mynlp.models'],
+    packages=['mynlp', 'mynlp.preprocess', 'mynlp.features', 'mynlp.utils', 'mynlp.models', 'mynlp.models.dedupe'],
     package_data={'mynlp': ['data/*.dat']},
     install_requires=['numpy', 'nltk', 'sklearn', 'gensim'],
     test_suite='tests',
